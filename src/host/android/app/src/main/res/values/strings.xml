@@ -4,5 +4,8 @@
     <string name="info">Info</string>
     <string name="password_settings">Password Settings</string>
     <string name="ok">OK</string>
+    <string name="btnBiometrics">Use Biometrics</string>
     <string name="cancel">Cancel</string>
+    <string name="accounts_table">Accounts Table</string>
+    <string name="set_pin">Set Master Pin</string>
 </resources>

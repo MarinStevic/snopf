@@ -14,6 +14,7 @@ import android.hardware.usb.UsbDevice
 import android.hardware.usb.UsbManager
 import android.os.Build
 import android.os.Bundle
+import android.text.InputType
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
@@ -204,6 +205,7 @@ class MainActivity : AppCompatActivity() {
                 if (checkBiometricSupport(true)) {
                     val builder = AlertDialog.Builder(this)
                     val pin = EditText(this)
+                    pin.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
                     builder.setTitle("Enter your Master Pin:")
                         .setMessage("Remember this password.")
                         .setCancelable(false)
